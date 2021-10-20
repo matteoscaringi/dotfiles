@@ -5,6 +5,9 @@ Starship for fish
 Terminal Emulator:
 Kitty terminal
 
+Font: 
+SFMono Nerd Font Mono Complete from the AUR
+
 Fetch programs:
 pfetch
 neofetch

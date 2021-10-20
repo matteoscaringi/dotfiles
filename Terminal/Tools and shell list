@@ -1,6 +1,10 @@
+Shell(s):
 Fish shell
-Starship for fish 
+Starship for fish
+
+Terminal Emulator:
 Kitty terminal
+
+Fetch programs:
 pfetch
 neofetch
-more to come

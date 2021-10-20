@@ -1,3 +1,4 @@
+export EDITOR='nano'
 if status is-interactive
     pfetch
     alias btw='neofetch'

@@ -1,0 +1,35 @@
+#Screeshot
+Print
+	flameshot gui
+
+#Dmenu run
+super + space
+	dmenu_run
+
+#Terminal
+super + t
+	kitty
+
+#Quit WM
+super + Escape
+     bspc {quit,wm -r}
+
+#Close application
+super + q
+    bspc node -c
+
+#Expand application
+super + shift + {h,j,k,l}
+    bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+#Smaller application
+super + alt + shift + {h,j,k,l}
+    bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# Reload polybar config
+super + r
+    killall polybar && sleep 2s; ~/.config/polybar/start.sh
+
+#Toggle floating mode
+super + alt + f
+    bspc node -t \~floating

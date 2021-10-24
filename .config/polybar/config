@@ -33,7 +33,7 @@ monitor = DP-2
 inherit = bar-config
 enable-ipc = true
 modules-left = workspaces window
-modules-center = spotify-prev spotify-play-pause spotify-next spotify
+modules-center = now-playing
 modules-right = volume sep updates sep memory sep cpu sep net-eth clock sep poweroff reboot sleep 
 
 [bar/secondary]

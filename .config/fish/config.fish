@@ -12,6 +12,10 @@ if status is-login
   end
 end
 
+#Global vars
+export SUDO_PROMPT=' Password: '
+export SSH_KEY_PATH="~/.ssh/id_rsa"
+
 #Git aliases
 alias g='git'
 alias ga='git add -u'

@@ -1,6 +1,6 @@
 #
-#  Polybar config by Kees van Voorthuizen
-#           github.com/keesvv
+#        Polybar config by Matteo Scaringi
+#           github.com/deadlyfamous06
 #
 
 include-directory = modules
@@ -9,16 +9,19 @@ include-directory = vars
 [bar-config]
 # Dimensions
 width = 100%
-height = 25
+height = 30
 wm-restack = bspwm
 
-# Spacing
+#Spacing
 padding = 1
 module-margin = 1
+offset-y = 8
+offset-x = 8
+border-right-size= 16
 
 # Background
-background = ${colors.background}
-foreground = ${colors.foreground}
+background = #00000000
+#foreground = #00000000
 
 # Fonts
 font-0 = ${fonts.default}
@@ -32,13 +35,6 @@ font-1 = ${fonts.icons}
 monitor = DP-2
 inherit = bar-config
 enable-ipc = true
-modules-left = workspaces window
+modules-left = workspaces
 modules-center = now-playing
 modules-right = volume sep updates sep memory sep cpu sep net-eth clock sep poweroff reboot sleep 
-
-[bar/secondary]
-monitor = HDMI-1
-inherit = bar-config
-modules-left = workspaces window
-modules-right = music
-

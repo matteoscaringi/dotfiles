@@ -5,10 +5,10 @@ sxhkd &
 
 #Polybar
 $HOME/.config/polybar/start_primary.sh
-#$HOME/.config/polybar/start_secondary.sh
+$HOME/.dotfiles/scripts/get_spotify_status.sh
 
 #Wallpaper
-feh --bg-tile /home/matteo/Pictures/wallhaven-odx38m.jpg
+feh --bg-tile $HOME/.dotfiles/wallpaper.jpg
 
 #Workspaces
 bspc monitor DP-2  -d 6 7 8 9 10
@@ -20,3 +20,6 @@ bspc config top_padding		20
 bspc config left_padding	30
 bspc config right_padding	30
 bspc config bottom_padding	20
+
+discord --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy
+bspc rule -a -o spotify desktop=2

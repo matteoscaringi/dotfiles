@@ -2,7 +2,6 @@
 export EDITOR='nano'
 if status is-interactive
     pfetch
-    starship init fish | source
 end
 
 #Login script for startx
@@ -10,6 +9,11 @@ if status is-login
   if test -z "$DISPLAY" -a $XDG_VTNR = 1
     exec startx $HOME/.xinitrc
   end
+end
+
+#Prompt
+function fish_prompt
+    printf '%s%s $ %s' (set_color brblack) (dirs) (set_color normal)
 end
 
 #Global vars
@@ -29,6 +33,9 @@ alias gf='git fetch -p'
 alias gco='git checkout'
 alias gcb='git checkout -b'
 alias glc='git log --oneline | wc -l'
+
+#SSH aliases
+alias server='ssh ssh.nonamesmp.ga -l sven'
 
 #Other aliases
 alias btw='neofetch'

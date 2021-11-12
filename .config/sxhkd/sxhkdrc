@@ -33,3 +33,7 @@ super + r
 #Toggle floating mode
 super + alt + f
     bspc node -t \~floating
+
+#Reload polybar config
+super+alt+r
+    kill -SIGUSR1 (pidof polybar)

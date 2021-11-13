@@ -33,13 +33,11 @@ inherit = bar-config
 enable-ipc = true
 modules-left = bspwm 
 #modules-center = now-playing
-pin-workspaces = true
 modules-right = volume sep updates sep memory sep cpu sep net-eth sep poweroff reboot sleep 
 
 [bar/left]
 monitor = HDMI-1
 inherit = bar-config
 enable-ipc = true
-pin-workspaces = true
 modules-left = bspwm
 modules-right = now-playing sep clock

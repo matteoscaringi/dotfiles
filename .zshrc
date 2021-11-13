@@ -1,6 +1,6 @@
 #Onload script for startx
-if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-    exec startx $HOME/.xinitrc
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+  exec startx $HOME/.xinitrc
 fi
 
 #Global vars

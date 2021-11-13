@@ -13,7 +13,7 @@ SAVEHIST=10000
 AUTO_LS_COMMANDS=(ls)
 
 #Init zplug
-source /usr/share/zsh/scripts/zplug/init.zsh
+source $HOME/.zplug/init.zsh
 
 #Prompt init
 eval "$(starship init zsh)"

@@ -4,14 +4,14 @@
 sxhkd &
 
 #Polybar
-$HOME/.config/polybar/start_primary.sh
+$HOME/.config/polybar/start.sh
 $HOME/.dotfiles/scripts/get_spotify_status.sh
 
 #Wallpaper
 feh --bg-tile $HOME/.dotfiles/wallpaper.jpg
 
 #Workspaces
-bspc monitor DP-2  -d 6 7 8 9 10
+bspc monitor DP-2  -d 1 2 3 4 5
 bspc monitor HDMI-1 -d 1 2 3 4 5
 
 bspc config border_width     1

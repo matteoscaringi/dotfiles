@@ -54,6 +54,7 @@ alias glc='git log --oneline | wc -l'
 alias btw='neofetch'
 alias code='vscodium'
 alias weer='curl wttr.in'
+alias server='ssh ssh.nonamesmp.ga -l sven'
 
 #Print system info
 pfetch

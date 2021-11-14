@@ -13,24 +13,24 @@ SAVEHIST=10000
 AUTO_LS_COMMANDS=(ls)
 
 #Init zplug
-#source /usr/share/zsh/scripts/zplug/init.zsh
-
-#Prompt init
-#eval "$(starship init zsh)"
+source /usr/share/zsh/scripts/zplug/init.zsh
 
 #Plugins
-#zplug "zsh-users/zsh-syntax-highlighting", defer:2
-#zplug "zsh-users/zsh-history-substring-search"
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "zsh-users/zsh-history-substring-search"
 
-#if ! zplug check --verbose; then
-#    #zplug install
-#fi
+if ! zplug check --verbose; then
+     zplug install
+fi
 
-#zplug load
+zplug load
 
 #Prompt (no deps)
 setopt PROMPT_SUBST
 PS1=$'\e[90m$(dirs) $ \e[0m'
+
+autoload -U colors && colors
+PS1=$'%{$fg[white]%}$(dirs) $ %{$reset_color%}'
 
 #Git aliases
 alias g='git'

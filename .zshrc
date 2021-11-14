@@ -16,8 +16,12 @@ AUTO_LS_COMMANDS=(ls)
 source /usr/share/zsh/scripts/zplug/init.zsh
 
 #Plugins
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "plugins/colored-man-pages", from:oh-my-zsh
+zplug "zsh-users/zsh-syntax-highlighting"
+zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-history-substring-search"
+zplug "desyncr/auto-ls"
+zplug "djui/alias-tips"
 
 if ! zplug check --verbose; then
      zplug install
